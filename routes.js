@@ -7,6 +7,8 @@ const config = require("./config");
 const {documents} = config;
 
 
+// GET REQUST a API hosteado localmente http://localhost:5000/erp_query/purchase-invoices
+
 recordRoutes.route("/erp_query/:object_doc").get(async function (req, res) {
     const path = req.params.object_doc;
     const document_object = documents[path];

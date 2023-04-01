@@ -3,12 +3,14 @@
 const documents = {
     "invoices": "Invoices",
     "purchase-invoices": "PurchaseInvoices",
-    "purchase-credit-notes-": "PurchaseInvoices",
+    "purchase-credit-notes": "PurchaseCreditNotes",
     "inventory": "Items",
     "purchase-orders": "PurchaseOrders",
     "vendor-payments": "VendorPayments",
     "suppliers-detail": "BusinessPartners",
 };
+//
+
 
 const SAP_ENDPOINT = true ? "https://10.10.10.4:50000/b1s/v1/" : "https://20.225.223.249:55000/b1s/v1/";
 const PROD_CREDENTIALS = {
@@ -18,6 +20,7 @@ const PROD_CREDENTIALS = {
 };
 
 const DESIRED_DATE_RANGE = "DocDate ge '2021-10-31' and DocDate le '2021-12-01'";
+
 const WRITE_DIRECTORY = "./output/";
 
 
